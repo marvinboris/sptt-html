@@ -1,5 +1,6 @@
 window.addEventListener("load", () => {
   const dropdowns = document.querySelectorAll(".scrollbar-none.mt-9 > div");
+
   dropdowns.forEach((dropdown) => {
     const button = dropdown.querySelector("button");
     const buttonCaret = button.querySelector(".ml-auto svg");
