@@ -1,0 +1,1535 @@
+<!DOCTYPE html>
+<html class="dark" style="">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta
+      name="robots"
+      content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1"
+    />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="Spread Tech Token" />
+    <meta name="application-name" content="Spread Tech Token" />
+    <meta name="msapplication-TileColor" content="#5a28e2" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Spread Tech Token" />
+    <meta name="twitter:card" content="summary" />
+    <meta name="theme-color" content="#1d1b27" />
+    <base href="/" />
+    
+    <link rel="preload" as="image" href="/sptt.svg" fetchpriority="high" />
+    <meta
+      name="description"
+      content="Spread Tech Token: View and manage referal commission."
+    />
+    <meta property="og:title" content="Generation | Spread Tech Token" />
+    <meta
+      property="og:description"
+      content="Spread Tech Token: View and manage referal commission."
+    />
+    <meta property="og:url" content="/admin/settings/generation" />
+    <meta property="twitter:title" content="Generation | Spread Tech Token" />
+    <meta
+      property="twitter:description"
+      content="Spread Tech Token: View and manage referal commission."
+    />
+    <link rel="canonical" href="/admin/settings/generation" />
+    <meta name="next-head-count" content="23" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Readex+Pro&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link href="https://fonts.cdnfonts.com/css/gilroy-bold" rel="stylesheet" />
+    <link rel="icon" href="/favicon.svg" />
+    <noscript data-n-css=""> </noscript>
+    <link href="/css/style.css" rel="stylesheet" />
+    <noscript id="__next_css__DO_NOT_USE__"> </noscript>
+    <title>Generation | Spread Tech Token</title>
+  </head>
+  <body
+    data-aos-easing="ease"
+    data-aos-duration="400"
+    data-aos-delay="0"
+    data-new-gr-c-s-check-loaded="14.1111.0"
+    data-gr-ext-installed=""
+    cz-shortcut-listen="true"
+  >
+    <div id="__next">
+      <div
+        class="relative flex h-screen overflow-hidden bg-nightblue font-body"
+      >
+        <div class="fixed inset-0 top-0 z-40 h-screen md:relative md:block">
+          <div
+            class="absolute z-0 flex h-full w-[246px] flex-col bg-nightblue px-5 py-[18px] after:absolute after:inset-0 after:-z-10 after:bg-black/20 md:relative opacity-100 scale-100"
+          >
+            <div>
+              <a href="/">
+                <div class="">
+                  <img
+                    alt="Logo"
+                    fetchpriority="high"
+                    width="500"
+                    height="500"
+                    decoding="async"
+                    data-nimg="1"
+                    class="w-auto h-10"
+                    src="/sptt.svg"
+                    style="color: transparent"
+                  />
+                </div>
+              </a>
+            </div>
+            <div class="mt-12 rounded-[20px] bg-black/20 px-3 pb-2.5 pt-3">
+              <div class="flex items-center gap-2">
+                <img
+                  alt="Token Icon"
+                  loading="lazy"
+                  width="100"
+                  height="100"
+                  decoding="async"
+                  data-nimg="1"
+                  class="w-5 flex-none"
+                  srcset="
+                    /images/token.webp 1x,
+                    /images/token.webp 2x
+                  "
+                  src="/images/token.webp"
+                  style="color: transparent"
+                />
+                <div class="text-sm">Current SPTT price</div>
+              </div>
+              <div class="mt-2.5">
+                <div
+                  class="ml-7 flex items-center gap-px font-display font-bold"
+                >
+                  <span>$0.0058</span>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="w-3.5 flex-none text-green"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M4.5 10.5L12 3m0 0l7.5 7.5M12 3v18"
+                    ></path>
+                  </svg>
+                </div>
+                <div class="ml-4 mt-4 flex items-end justify-between">
+                  <img
+                    alt="curve-green icon"
+                    loading="lazy"
+                    width="500"
+                    height="500"
+                    decoding="async"
+                    data-nimg="1"
+                    class="h-[22px] w-auto flex-none"
+                    src="/images/icons/curve-green.svg"
+                    style="color: transparent"
+                  />
+                  <button
+                    class="flex h-7 w-7 flex-none items-center justify-center rounded-full bg-white/10 text-white"
+                  >
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="w-3.5 flex-none"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M13.5 4.5L21 12m0 0l-7.5 7.5M21 12H3"
+                      ></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 overflow-auto scrollbar-none mt-9" style="">
+              <a
+                class="block h-[54px] w-full rounded-[14px] bg-gradient-to-r shadow-lg transition-all duration-200 from-transparent to-transparent p-0 font-medium shadow-transparent"
+                href="/admin/dashboard/"
+              >
+                <div
+                  class="relative z-0 flex h-full gap-4 truncate rounded-[14px] text-white/80 transition-all duration-200 after:absolute after:inset-0 after:-z-10 bg-transparent p-4 after:bg-transparent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="text-white/80 w-[21px] flex-none opacity-60"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 12l8.954-8.955c.44-.439 1.152-.439 1.591 0L21.75 12M4.5 9.75v10.125c0 .621.504 1.125 1.125 1.125H9.75v-4.875c0-.621.504-1.125 1.125-1.125h2.25c.621 0 1.125.504 1.125 1.125V21h4.125c.621 0 1.125-.504 1.125-1.125V9.75M8.25 21h8.25"
+                    ></path>
+                  </svg>
+                  <div>Dashboard</div>
+                </div>
+              </a>
+              <a
+                class="block h-[54px] w-full rounded-[14px] bg-gradient-to-r shadow-lg transition-all duration-200 from-transparent to-transparent p-0 font-medium shadow-transparent"
+                href="/admin/users/"
+              >
+                <div
+                  class="relative z-0 flex h-full gap-4 truncate rounded-[14px] text-white/80 transition-all duration-200 after:absolute after:inset-0 after:-z-10 bg-transparent p-4 after:bg-transparent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="text-white/80 w-[21px] flex-none opacity-60"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 19.128a9.38 9.38 0 002.625.372 9.337 9.337 0 004.121-.952 4.125 4.125 0 00-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 018.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0111.964-3.07M12 6.375a3.375 3.375 0 11-6.75 0 3.375 3.375 0 016.75 0zm8.25 2.25a2.625 2.625 0 11-5.25 0 2.625 2.625 0 015.25 0z"
+                    ></path>
+                  </svg>
+                  <div>Users</div>
+                </div>
+              </a>
+              <a
+                class="block h-[54px] w-full rounded-[14px] bg-gradient-to-r shadow-lg transition-all duration-200 from-transparent to-transparent p-0 font-medium shadow-transparent"
+                href="/admin/packs/"
+              >
+                <div
+                  class="relative z-0 flex h-full gap-4 truncate rounded-[14px] text-white/80 transition-all duration-200 after:absolute after:inset-0 after:-z-10 bg-transparent p-4 after:bg-transparent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="text-white/80 w-[21px] flex-none opacity-60"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M21 7.5l-9-5.25L3 7.5m18 0l-9 5.25m9-5.25v9l-9 5.25M3 7.5l9 5.25M3 7.5v9l9 5.25m0-9v9"
+                    ></path>
+                  </svg>
+                  <div>Course Packs</div>
+                </div>
+              </a>
+              <a
+                class="block h-[54px] w-full rounded-[14px] bg-gradient-to-r shadow-lg transition-all duration-200 from-transparent to-transparent p-0 font-medium shadow-transparent"
+                href="/admin/holders/"
+              >
+                <div
+                  class="relative z-0 flex h-full gap-4 truncate rounded-[14px] text-white/80 transition-all duration-200 after:absolute after:inset-0 after:-z-10 bg-transparent p-4 after:bg-transparent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="text-white/80 w-[21px] flex-none opacity-60"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M18 18.72a9.094 9.094 0 003.741-.479 3 3 0 00-4.682-2.72m.94 3.198l.001.031c0 .225-.012.447-.037.666A11.944 11.944 0 0112 21c-2.17 0-4.207-.576-5.963-1.584A6.062 6.062 0 016 18.719m12 0a5.971 5.971 0 00-.941-3.197m0 0A5.995 5.995 0 0012 12.75a5.995 5.995 0 00-5.058 2.772m0 0a3 3 0 00-4.681 2.72 8.986 8.986 0 003.74.477m.94-3.197a5.971 5.971 0 00-.94 3.197M15 6.75a3 3 0 11-6 0 3 3 0 016 0zm6 3a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0zm-13.5 0a2.25 2.25 0 11-4.5 0 2.25 2.25 0 014.5 0z"
+                    ></path>
+                  </svg>
+                  <div>Holders</div>
+                </div>
+              </a>
+              <a
+                class="block h-[54px] w-full rounded-[14px] bg-gradient-to-r shadow-lg transition-all duration-200 from-transparent to-transparent p-0 font-medium shadow-transparent"
+                href="/admin/payouts/"
+              >
+                <div
+                  class="relative z-0 flex h-full gap-4 truncate rounded-[14px] text-white/80 transition-all duration-200 after:absolute after:inset-0 after:-z-10 bg-transparent p-4 after:bg-transparent"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="text-white/80 w-[21px] flex-none opacity-60"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M8.625 12a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H8.25m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0H12m4.125 0a.375.375 0 11-.75 0 .375.375 0 01.75 0zm0 0h-.375M21 12c0 4.556-4.03 8.25-9 8.25a9.764 9.764 0 01-2.555-.337A5.972 5.972 0 015.41 20.97a5.969 5.969 0 01-.474-.065 4.48 4.48 0 00.978-2.025c.09-.457-.133-.901-.467-1.226C3.93 16.178 3 14.189 3 12c0-4.556 4.03-8.25 9-8.25s9 3.694 9 8.25z"
+                    ></path>
+                  </svg>
+                  <div>Payouts</div>
+                </div>
+              </a>
+              <div>
+                <button
+                  class="flex h-[54px] w-full items-center gap-4 truncate rounded-[14px] p-4 text-white/80 transition-all duration-200 font-medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="text-white/80 w-[21px] flex-none opacity-60"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M3.75 3v11.25A2.25 2.25 0 006 16.5h2.25M3.75 3h-1.5m1.5 0h16.5m0 0h1.5m-1.5 0v11.25A2.25 2.25 0 0118 16.5h-2.25m-7.5 0h7.5m-7.5 0l-1 3m8.5-3l1 3m0 0l.5 1.5m-.5-1.5h-9.5m0 0l-.5 1.5m.75-9l3-3 2.148 2.148A12.061 12.061 0 0116.5 7.605"
+                    ></path>
+                  </svg>
+                  <div>Reports</div>
+                  <div class="ml-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="w-3.5 text-white/80 transition-all duration-200"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+                <div
+                  class="relative mx-2 overflow-hidden rounded-b-xl text-sm transition-all duration-200 max-h-0"
+                >
+                  <div
+                    class="absolute -top-1 left-[23px] h-full w-[5px] opacity-20"
+                  >
+                    <div
+                      class="h-full w-full bg-gradient-to-b from-transparent from-10% via-white/50 via-80% to-transparent"
+                    ></div>
+                  </div>
+                  <div class="space-y-2.5">
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/reports/purchase/"
+                        >Purchase report</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/reports/paid-bonus/"
+                        >Paid bonus report</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/reports/commission/"
+                        >Commission report</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="flex h-[54px] w-full items-center gap-4 truncate rounded-[14px] p-4 text-white/80 transition-all duration-200 border border-primary-600 bg-black/10 font-display font-bold shadow-lg shadow-primary-600/10"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="text-primary-400 w-[21px] flex-none opacity-60"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+                    ></path>
+                  </svg>
+                  <div>System settings</div>
+                  <div class="ml-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="w-3.5 text-white/80 transition-all duration-200 relative z-0 rotate-180 after:absolute after:inset-0 after:-z-10 after:rounded-full after:bg-secondary-100/20"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+                <div
+                  class="relative mx-2 overflow-hidden rounded-b-xl text-sm transition-all duration-200 max-h-96 pb-[18px] pt-3 bg-primary-400/10"
+                >
+                  <div
+                    class="absolute -top-1 left-[23px] h-full w-[5px] opacity-20"
+                  >
+                    <div
+                      class="h-full w-full bg-gradient-to-b from-transparent from-10% via-white/50 via-80% to-transparent"
+                    ></div>
+                  </div>
+                  <div class="space-y-2.5">
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/settings/system-user/"
+                        >System user</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/settings/company-profile/"
+                        >Company profile</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/settings/methods/"
+                        >Payment methods</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/settings/kyc/"
+                        >User KYC</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-3.5 bg-green"
+                      ></div>
+                      <a
+                        class="font-display font-bold text-green transition-all duration-200"
+                        href="/admin/settings/generation/"
+                        >Generation</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/settings/mlm/"
+                        >MLM settings</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/settings/send-token/"
+                        >Send token</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/settings/language/"
+                        >Language settings</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button
+                  class="flex h-[54px] w-full items-center gap-4 truncate rounded-[14px] p-4 text-white/80 transition-all duration-200 font-medium"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="text-white/80 w-[21px] flex-none opacity-60"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M10.343 3.94c.09-.542.56-.94 1.11-.94h1.093c.55 0 1.02.398 1.11.94l.149.894c.07.424.384.764.78.93.398.164.855.142 1.205-.108l.737-.527a1.125 1.125 0 011.45.12l.773.774c.39.389.44 1.002.12 1.45l-.527.737c-.25.35-.272.806-.107 1.204.165.397.505.71.93.78l.893.15c.543.09.94.56.94 1.109v1.094c0 .55-.397 1.02-.94 1.11l-.893.149c-.425.07-.765.383-.93.78-.165.398-.143.854.107 1.204l.527.738c.32.447.269 1.06-.12 1.45l-.774.773a1.125 1.125 0 01-1.449.12l-.738-.527c-.35-.25-.806-.272-1.203-.107-.397.165-.71.505-.781.929l-.149.894c-.09.542-.56.94-1.11.94h-1.094c-.55 0-1.019-.398-1.11-.94l-.148-.894c-.071-.424-.384-.764-.781-.93-.398-.164-.854-.142-1.204.108l-.738.527c-.447.32-1.06.269-1.45-.12l-.773-.774a1.125 1.125 0 01-.12-1.45l.527-.737c.25-.35.273-.806.108-1.204-.165-.397-.505-.71-.93-.78l-.894-.15c-.542-.09-.94-.56-.94-1.109v-1.094c0-.55.398-1.02.94-1.11l.894-.149c.424-.07.765-.383.93-.78.165-.398.143-.854-.107-1.204l-.527-.738a1.125 1.125 0 01.12-1.45l.773-.773a1.125 1.125 0 011.45-.12l.737.527c.35.25.807.272 1.204.107.397-.165.71-.505.78-.929l.15-.894z"
+                    ></path>
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                    ></path>
+                  </svg>
+                  <div>CMS settings</div>
+                  <div class="ml-auto">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      fill="none"
+                      viewBox="0 0 24 24"
+                      stroke-width="1.5"
+                      stroke="currentColor"
+                      aria-hidden="true"
+                      class="w-3.5 text-white/80 transition-all duration-200"
+                    >
+                      <path
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                        d="M19.5 8.25l-7.5 7.5-7.5-7.5"
+                      ></path>
+                    </svg>
+                  </div>
+                </button>
+                <div
+                  class="relative mx-2 overflow-hidden rounded-b-xl text-sm transition-all duration-200 max-h-0"
+                >
+                  <div
+                    class="absolute -top-1 left-[23px] h-full w-[5px] opacity-20"
+                  >
+                    <div
+                      class="h-full w-full bg-gradient-to-b from-transparent from-10% via-white/50 via-80% to-transparent"
+                    ></div>
+                  </div>
+                  <div class="space-y-2.5">
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/cms/global/"
+                        >Global</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/cms/general/"
+                        >General</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/cms/auth/"
+                        >Authentication</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/cms/backend/"
+                        >Backend</a
+                      >
+                    </div>
+                    <div class="relative ml-14">
+                      <div
+                        class="absolute -left-7 top-1/2 h-0.5 -translate-y-1/2 transition-all duration-200 w-2 bg-white/40"
+                      ></div>
+                      <a
+                        class="text-white transition-all duration-200"
+                        href="/admin/cms/frontend/"
+                        >Frontend</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div
+            class="absolute inset-0 -z-10 bg-black/30 backdrop-blur-sm backdrop-filter opacity-100"
+          ></div>
+        </div>
+        <div
+          class="scrollbar-app flex h-screen flex-1 flex-col overflow-y-auto"
+          style=""
+        >
+          <header
+            class="sticky top-0 z-30 mx-8 mt-14 flex flex-none items-center rounded-[14px] bg-nightblue after:absolute after:inset-0 after:-z-10 after:rounded-[14px] after:bg-lightblue/10 xl:mr-20 h-[69px]"
+          >
+            <div
+              class="relative flex flex-1 items-center px-4 md:pl-[26px] md:pr-6"
+            >
+              <div class="mr-3 cursor-pointer md:hidden">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  class="w-10 text-primary-400"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+                  ></path>
+                </svg>
+              </div>
+              <div class="flex items-center gap-2.5">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  class="w-[21px] flex-none text-white"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L10.582 16.07a4.5 4.5 0 01-1.897 1.13L6 18l.8-2.685a4.5 4.5 0 011.13-1.897l8.932-8.931zm0 0L19.5 7.125M18 14v4.75A2.25 2.25 0 0115.75 21H5.25A2.25 2.25 0 013 18.75V8.25A2.25 2.25 0 015.25 6H10"
+                  ></path>
+                </svg>
+                <div
+                  class="h-1.5 w-1.5 flex-none rounded-full bg-white/10"
+                ></div>
+                <div class="font-body text-white/80">
+                  <span class="font-display font-bold">System settings</span>
+                  <span class="hidden sm:inline">/ home</span>
+                </div>
+              </div>
+              <div
+                class="ml-auto hidden items-center gap-2.5 rounded-full border border-white/30 bg-black/[0.04] px-3.5 py-2.5 xl:flex"
+              >
+                <div class="font-body text-sm opacity-60">
+                  <span class="font-display font-bold"
+                    >https://www.spreadtt.io/</span
+                  >ref?=0x023810...3k5G
+                </div>
+                <div class="relative inline-block">
+                  <div class="cursor-pointer">
+                    <div
+                      class="flex aspect-square w-[22px] flex-none items-center justify-center rounded-full bg-green text-white"
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        aria-hidden="true"
+                        class="w-3.5"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M8.25 7.5V6.108c0-1.135.845-2.098 1.976-2.192.373-.03.748-.057 1.123-.08M15.75 18H18a2.25 2.25 0 002.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 00-1.123-.08M15.75 18.75v-1.875a3.375 3.375 0 00-3.375-3.375h-1.5a1.125 1.125 0 01-1.125-1.125v-1.5A3.375 3.375 0 006.375 7.5H5.25m11.9-3.664A2.251 2.251 0 0015 2.25h-1.5a2.251 2.251 0 00-2.15 1.586m5.8 0c.065.21.1.433.1.664v.75h-6V4.5c0-.231.035-.454.1-.664M6.75 7.5H4.875c-.621 0-1.125.504-1.125 1.125v12c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V16.5a9 9 0 00-9-9z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <div
+                    class="scale-0 opacity-0 absolute right-0 top-full mt-1 origin-top-right rounded bg-secondary-800 p-1 text-xs text-white transition-all duration-200"
+                  >
+                    Copied
+                  </div>
+                </div>
+              </div>
+              <div class="ml-auto hidden sm:flex">
+                <div class="mr-5 md:mr-[51.69px]"></div>
+                <div
+                  class="group relative z-0 mr-3 after:absolute after:right-0 after:top-0 after:block after:h-[12.72px] after:w-[12.72px] after:rounded-full after:bg-green"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    aria-hidden="true"
+                    class="w-[31px] cursor-pointer"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                    ></path>
+                  </svg>
+                  <div
+                    class="absolute right-0 top-full origin-top-right scale-0 pt-1 opacity-0 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100"
+                  >
+                    <div
+                      class="w-72 truncate rounded-[14px] border-[0.25px] bg-white py-1.5 shadow-sm dark:border-white/10 dark:bg-secondary-800"
+                    >
+                      <div
+                        class="mb-2 px-3 text-lg font-semibold text-secondary-800 dark:text-secondary-200"
+                      >
+                        Notifications
+                      </div>
+                      <div
+                        class="space-y-2 divide-y divide-secondary-300 px-1.5 dark:divide-white/20"
+                      >
+                        <a
+                          class="flex cursor-pointer items-center space-x-2 rounded-lg px-3 py-2 hover:bg-secondary-100 dark:hover:bg-secondary-900"
+                          href="/admin/notifications/1/"
+                        >
+                          <div
+                            class="mt-1.5 h-2 w-2 flex-none self-start rounded-full bg-primary-600"
+                          ></div>
+                          <div class="flex-1">
+                            <div
+                              class="line-clamp-2 whitespace-normal leading-tight"
+                            >
+                              <div class="font-semibold">This is a test</div>
+                            </div>
+                            <div
+                              class="mt-1.5 text-xs leading-none text-secondary-600 dark:text-secondary-400"
+                            >
+                              May 31, 2023 - 13 : 23 : 06
+                            </div>
+                          </div>
+                          <div
+                            class="flex h-8 w-8 items-center justify-center rounded-full bg-primary-600 text-white"
+                          >
+                            <svg
+                              xmlns="http://www.w3.org/2000/svg"
+                              fill="none"
+                              viewBox="0 0 24 24"
+                              stroke-width="1.5"
+                              stroke="currentColor"
+                              aria-hidden="true"
+                              class="w-4"
+                            >
+                              <path
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                d="M14.857 17.082a23.848 23.848 0 005.454-1.31A8.967 8.967 0 0118 9.75v-.7V9A6 6 0 006 9v.75a8.967 8.967 0 01-2.312 6.022c1.733.64 3.56 1.085 5.455 1.31m5.714 0a24.255 24.255 0 01-5.714 0m5.714 0a3 3 0 11-5.714 0"
+                              ></path>
+                            </svg>
+                          </div>
+                        </a>
+                        <div class="px-1 pb-1 pt-3 text-sm">
+                          <a
+                            class="font-semibold text-primary-600"
+                            href="/admin/notifications/"
+                            >Voir toutes les notifications</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div
+              class="hidden h-10 w-[3px] flex-none rounded-full bg-secondary-700/10 sm:block"
+            ></div>
+            <div class="flex items-center justify-between gap-7 pr-9 sm:ml-8">
+              <div class="hidden md:block">
+                <div class="font-display font-bold">Admin Account</div>
+                <div class="mt-px font-body text-sm opacity-60">
+                  Merani Carto
+                </div>
+              </div>
+              <div class="group relative">
+                <img
+                  alt="User pic wrapper"
+                  loading="lazy"
+                  width="1920"
+                  height="1920"
+                  decoding="async"
+                  data-nimg="1"
+                  class="w-14"
+                  src="/images/icons/user-pic-wrapper.svg"
+                  style="color: transparent"
+                />
+                <div
+                  class="absolute left-1/2 top-1/2 -ml-[1px] h-9 w-9 -translate-x-1/2 -translate-y-1/2 overflow-hidden rounded-full"
+                >
+                  <img
+                    alt="User pic"
+                    loading="lazy"
+                    width="1920"
+                    height="1920"
+                    decoding="async"
+                    data-nimg="1"
+                    class="image-cover absolute inset-0"
+                    src="/images/user-pic.svg"
+                    style="color: transparent"
+                  />
+                </div>
+                <div
+                  class="absolute right-0 top-full origin-top-right scale-0 pt-1.5 opacity-0 transition-all duration-200 group-hover:scale-100 group-hover:opacity-100"
+                >
+                  <div
+                    class="relative z-0 w-40 overflow-hidden rounded-[14px] bg-nightblue px-[7px] pb-6 pt-5 text-sm shadow-sm after:absolute after:inset-0 after:-z-10 after:bg-lightblue/10"
+                  >
+                    <div class="flex flex-col items-stretch gap-2.5 px-[13px]">
+                      <div class="relative inline-block">
+                        <div class="cursor-pointer">
+                          <div
+                            class="flex cursor-pointer items-center justify-between text-white xl:hidden"
+                          >
+                            <span class="font-medium">Referal Link</span>
+                            <span>
+                              <div
+                                class="flex w-6 items-center justify-center rounded-full bg-night/10"
+                              >
+                                <svg
+                                  stroke="currentColor"
+                                  fill="currentColor"
+                                  stroke-width="0"
+                                  viewBox="0 0 448 512"
+                                  class="w-4 flex-none"
+                                  height="1em"
+                                  width="1em"
+                                  xmlns="http://www.w3.org/2000/svg"
+                                >
+                                  <path
+                                    d="M433.941 65.941l-51.882-51.882A48 48 0 0 0 348.118 0H176c-26.51 0-48 21.49-48 48v48H48c-26.51 0-48 21.49-48 48v320c0 26.51 21.49 48 48 48h224c26.51 0 48-21.49 48-48v-48h80c26.51 0 48-21.49 48-48V99.882a48 48 0 0 0-14.059-33.941zM266 464H54a6 6 0 0 1-6-6V150a6 6 0 0 1 6-6h74v224c0 26.51 21.49 48 48 48h96v42a6 6 0 0 1-6 6zm128-96H182a6 6 0 0 1-6-6V54a6 6 0 0 1 6-6h106v88c0 13.255 10.745 24 24 24h88v202a6 6 0 0 1-6 6zm6-256h-64V48h9.632c1.591 0 3.117.632 4.243 1.757l48.368 48.368a6 6 0 0 1 1.757 4.243V112z"
+                                  ></path>
+                                </svg>
+                              </div>
+                            </span>
+                          </div>
+                        </div>
+                        <div
+                          class="scale-0 opacity-0 absolute right-0 top-full mt-1 origin-top-right rounded bg-secondary-800 p-1 text-xs text-white transition-all duration-200"
+                        >
+                          Copied
+                        </div>
+                      </div>
+                      <a
+                        class="flex cursor-pointer items-center space-x-[7px]"
+                        href="/admin/settings/"
+                      >
+                        <span>
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke-width="1.5"
+                            stroke="currentColor"
+                            aria-hidden="true"
+                            class="w-4 opacity-20"
+                          >
+                            <path
+                              stroke-linecap="round"
+                              stroke-linejoin="round"
+                              d="M10.5 6h9.75M10.5 6a1.5 1.5 0 11-3 0m3 0a1.5 1.5 0 10-3 0M3.75 6H7.5m3 12h9.75m-9.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-3.75 0H7.5m9-6h3.75m-3.75 0a1.5 1.5 0 01-3 0m3 0a1.5 1.5 0 00-3 0m-9.75 0h9.75"
+                            ></path>
+                          </svg>
+                        </span>
+                        <span>Paramètres</span>
+                      </a>
+                      <div>
+                        <div class="inline-block">
+                          <div
+                            class="flex cursor-pointer items-center space-x-[7px] text-red"
+                          >
+                            <span>
+                              <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                fill="none"
+                                viewBox="0 0 24 24"
+                                stroke-width="1.5"
+                                stroke="currentColor"
+                                aria-hidden="true"
+                                class="w-4"
+                              >
+                                <path
+                                  stroke-linecap="round"
+                                  stroke-linejoin="round"
+                                  d="M15.75 9V5.25A2.25 2.25 0 0013.5 3h-6a2.25 2.25 0 00-2.25 2.25v13.5A2.25 2.25 0 007.5 21h6a2.25 2.25 0 002.25-2.25V15m3 0l3-3m0 0l-3-3m3 3H9"
+                                ></path>
+                              </svg>
+                            </span>
+                            <span class="font-bold">Déconnexion</span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </header>
+          <div class="relative flex flex-1 flex-col">
+            <main class="flex-1">
+              <div
+                class="px-[33px] pb-[54px] pt-[29px] xl:pl-[33px] xl:pr-[76px] xl:pt-[47px]"
+              >
+                <div class="xl:w-4/5 2xl:w-3/5">
+                  <input type="hidden" id="table-page" value="1" />
+                  <input type="hidden" id="table-show" value="10" />
+                  <input type="hidden" id="table-search" value="" />
+                  <div
+                    class="w-full rounded-[40px] bg-darkblue/40 pb-14 pl-12 pr-16 pt-8"
+                  >
+                    <div
+                      class="mb-[30.89px] flex flex-wrap items-center justify-between"
+                    >
+                      <div>
+                        <div class="font-display text-[25px] font-bold">
+                          Generation
+                        </div>
+                        <div class="mt-px text-sm text-white/40">
+                          View and manage referal commission
+                        </div>
+                        <div
+                          class="mt-3.5 h-[7px] w-8 rounded-full bg-green"
+                        ></div>
+                      </div>
+                      <div
+                        class="mb-8 flex items-center gap-8 md:mb-0 md:ml-0"
+                      ></div>
+                      <div></div>
+                    </div>
+                    <div class="scrollbar-app overflow-auto pb-5">
+                      <table class="w-full table-auto border-collapse text-sm">
+                        <thead>
+                          <tr
+                            class="relative z-0 after:absolute after:inset-0 after:-z-10 after:rounded-lg after:bg-lightblue/10"
+                          >
+                            <th
+                              class="pb-[10.98px] pl-1.5 pr-1.5 pt-[12.49px] text-left font-bold first:pl-[14.64px] last:pr-[14.64px]"
+                            >
+                              SL
+                            </th>
+                            <th
+                              class="pb-[10.98px] pl-1.5 pr-1.5 pt-[12.49px] text-left font-bold first:pl-[14.64px] last:pr-[14.64px]"
+                            >
+                              Generation name
+                            </th>
+                            <th
+                              class="pb-[10.98px] pl-1.5 pr-1.5 pt-[12.49px] text-left font-bold first:pl-[14.64px] last:pr-[14.64px]"
+                            >
+                              Commission
+                            </th>
+                            <th
+                              class="pb-[10.98px] pl-1.5 pr-1.5 pt-[12.49px] text-left font-bold first:pl-[14.64px] last:pr-[14.64px]"
+                            >
+                              Generation status
+                            </th>
+                            <th
+                              class="pb-[10.98px] pl-1.5 pr-1.5 pt-[12.49px] text-left font-bold first:pl-[14.64px] last:pr-[14.64px]"
+                            >
+                              Action
+                            </th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr class="group even:bg-white/[.02]">
+                            <td
+                              class="border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0"
+                            >
+                              1
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              Generation 1
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <div class="text-center">4%</div>
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <span
+                                class="flex h-6 w-[70px] items-center justify-center gap-1 rounded-md bg-white/10"
+                              >
+                                <svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="1.5"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                  class="w-3 flex-none text-green"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                  ></path>
+                                </svg>
+                                <span class="text-[10px]">Active</span>
+                              </span>
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <div class="flex items-center gap-4 text-center">
+                                <a
+                                  class="flex h-6 w-6 items-center justify-center rounded-md bg-primary-400 text-white"
+                                  href="/admin/settings/undefined"
+                                >
+                                  <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="w-3.5 flex-none"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                                    ></path>
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path>
+                                  </svg>
+                                </a>
+                                <a
+                                  class="flex h-6 w-6 items-center justify-center rounded-md bg-sky text-white"
+                                  href="/admin/settings/undefined/edit"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="w-3.5 flex-none"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
+                                    ></path></svg></a
+                                ><span
+                                  ><div>
+                                    <div class="inline-block">
+                                      <span
+                                        class="flex h-6 w-6 items-center justify-center rounded-md bg-green text-white"
+                                        ><svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          fill="none"
+                                          viewBox="0 0 24 24"
+                                          stroke-width="1.5"
+                                          stroke="currentColor"
+                                          aria-hidden="true"
+                                          class="w-3.5 flex-none"
+                                        >
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+                                          ></path></svg
+                                      ></span>
+                                    </div></div
+                                ></span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="group even:bg-white/[.02]">
+                            <td
+                              class="border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0"
+                            >
+                              2
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              Generation 2
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <div class="text-center">2%</div>
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <span
+                                class="flex h-6 w-[70px] items-center justify-center gap-1 rounded-md bg-white/10"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="1.5"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                  class="w-3 flex-none text-green"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                  ></path></svg
+                                ><span class="text-[10px]">Active</span></span
+                              >
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <div class="flex items-center gap-4 text-center">
+                                <a
+                                  class="flex h-6 w-6 items-center justify-center rounded-md bg-primary-400 text-white"
+                                  href="/admin/settings/undefined"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="w-3.5 flex-none"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                                    ></path>
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path></svg></a
+                                ><a
+                                  class="flex h-6 w-6 items-center justify-center rounded-md bg-sky text-white"
+                                  href="/admin/settings/undefined/edit"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="w-3.5 flex-none"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
+                                    ></path></svg></a
+                                ><span
+                                  ><div>
+                                    <div class="inline-block">
+                                      <span
+                                        class="flex h-6 w-6 items-center justify-center rounded-md bg-green text-white"
+                                        ><svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          fill="none"
+                                          viewBox="0 0 24 24"
+                                          stroke-width="1.5"
+                                          stroke="currentColor"
+                                          aria-hidden="true"
+                                          class="w-3.5 flex-none"
+                                        >
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+                                          ></path></svg
+                                      ></span>
+                                    </div></div
+                                ></span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="group even:bg-white/[.02]">
+                            <td
+                              class="border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0"
+                            >
+                              3
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              Generation 3
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <div class="text-center">1%</div>
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <span
+                                class="flex h-6 w-[70px] items-center justify-center gap-1 rounded-md bg-white/10"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="1.5"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                  class="w-3 flex-none text-green"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9 12.75L11.25 15 15 9.75M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                  ></path></svg
+                                ><span class="text-[10px]">Active</span></span
+                              >
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <div class="flex items-center gap-4 text-center">
+                                <a
+                                  class="flex h-6 w-6 items-center justify-center rounded-md bg-primary-400 text-white"
+                                  href="/admin/settings/undefined"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="w-3.5 flex-none"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                                    ></path>
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path></svg></a
+                                ><a
+                                  class="flex h-6 w-6 items-center justify-center rounded-md bg-sky text-white"
+                                  href="/admin/settings/undefined/edit"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="w-3.5 flex-none"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
+                                    ></path></svg></a
+                                ><span
+                                  ><div>
+                                    <div class="inline-block">
+                                      <span
+                                        class="flex h-6 w-6 items-center justify-center rounded-md bg-green text-white"
+                                        ><svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          fill="none"
+                                          viewBox="0 0 24 24"
+                                          stroke-width="1.5"
+                                          stroke="currentColor"
+                                          aria-hidden="true"
+                                          class="w-3.5 flex-none"
+                                        >
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+                                          ></path></svg
+                                      ></span>
+                                    </div></div
+                                ></span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="group even:bg-white/[.02]">
+                            <td
+                              class="border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0"
+                            >
+                              4
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              Generation 4
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <div class="text-center">1%</div>
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <span
+                                class="flex h-6 w-[70px] items-center justify-center gap-1 rounded-md bg-red/20"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="1.5"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                  class="w-3 flex-none text-red"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                  ></path></svg
+                                ><span class="text-[10px] opacity-60"
+                                  >Inactive</span
+                                ></span
+                              >
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <div class="flex items-center gap-4 text-center">
+                                <a
+                                  class="flex h-6 w-6 items-center justify-center rounded-md bg-primary-400 text-white"
+                                  href="/admin/settings/undefined"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="w-3.5 flex-none"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                                    ></path>
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path></svg></a
+                                ><a
+                                  class="flex h-6 w-6 items-center justify-center rounded-md bg-sky text-white"
+                                  href="/admin/settings/undefined/edit"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="w-3.5 flex-none"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
+                                    ></path></svg></a
+                                ><span
+                                  ><div>
+                                    <div class="inline-block">
+                                      <span
+                                        class="flex h-6 w-6 items-center justify-center rounded-md bg-green text-white"
+                                        ><svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          fill="none"
+                                          viewBox="0 0 24 24"
+                                          stroke-width="1.5"
+                                          stroke="currentColor"
+                                          aria-hidden="true"
+                                          class="w-3.5 flex-none"
+                                        >
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+                                          ></path></svg
+                                      ></span>
+                                    </div></div
+                                ></span>
+                              </div>
+                            </td>
+                          </tr>
+                          <tr class="group even:bg-white/[.02]">
+                            <td
+                              class="border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0"
+                            >
+                              5
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              Generation 5
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <div class="text-center">2%</div>
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <span
+                                class="flex h-6 w-[70px] items-center justify-center gap-1 rounded-md bg-red/20"
+                                ><svg
+                                  xmlns="http://www.w3.org/2000/svg"
+                                  fill="none"
+                                  viewBox="0 0 24 24"
+                                  stroke-width="1.5"
+                                  stroke="currentColor"
+                                  aria-hidden="true"
+                                  class="w-3 flex-none text-red"
+                                >
+                                  <path
+                                    stroke-linecap="round"
+                                    stroke-linejoin="round"
+                                    d="M9.75 9.75l4.5 4.5m0-4.5l-4.5 4.5M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+                                  ></path></svg
+                                ><span class="text-[10px] opacity-60"
+                                  >Inactive</span
+                                ></span
+                              >
+                            </td>
+                            <td
+                              class="truncate border-b border-white/10 py-3 pl-1.5 pr-1.5 first:pl-[14.64px] last:pr-[14.64px] group-last:border-0 max-w-[250px]"
+                            >
+                              <div class="flex items-center gap-4 text-center">
+                                <a
+                                  class="flex h-6 w-6 items-center justify-center rounded-md bg-primary-400 text-white"
+                                  href="/admin/settings/undefined"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="w-3.5 flex-none"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M2.036 12.322a1.012 1.012 0 010-.639C3.423 7.51 7.36 4.5 12 4.5c4.638 0 8.573 3.007 9.963 7.178.07.207.07.431 0 .639C20.577 16.49 16.64 19.5 12 19.5c-4.638 0-8.573-3.007-9.963-7.178z"
+                                    ></path>
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"
+                                    ></path></svg></a
+                                ><a
+                                  class="flex h-6 w-6 items-center justify-center rounded-md bg-sky text-white"
+                                  href="/admin/settings/undefined/edit"
+                                  ><svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke-width="1.5"
+                                    stroke="currentColor"
+                                    aria-hidden="true"
+                                    class="w-3.5 flex-none"
+                                  >
+                                    <path
+                                      stroke-linecap="round"
+                                      stroke-linejoin="round"
+                                      d="M16.862 4.487l1.687-1.688a1.875 1.875 0 112.652 2.652L6.832 19.82a4.5 4.5 0 01-1.897 1.13l-2.685.8.8-2.685a4.5 4.5 0 011.13-1.897L16.863 4.487zm0 0L19.5 7.125"
+                                    ></path></svg></a
+                                ><span
+                                  ><div>
+                                    <div class="inline-block">
+                                      <span
+                                        class="flex h-6 w-6 items-center justify-center rounded-md bg-green text-white"
+                                        ><svg
+                                          xmlns="http://www.w3.org/2000/svg"
+                                          fill="none"
+                                          viewBox="0 0 24 24"
+                                          stroke-width="1.5"
+                                          stroke="currentColor"
+                                          aria-hidden="true"
+                                          class="w-3.5 flex-none"
+                                        >
+                                          <path
+                                            stroke-linecap="round"
+                                            stroke-linejoin="round"
+                                            d="M9 8.25H7.5a2.25 2.25 0 00-2.25 2.25v9a2.25 2.25 0 002.25 2.25h9a2.25 2.25 0 002.25-2.25v-9a2.25 2.25 0 00-2.25-2.25H15M9 12l3 3m0 0l3-3m-3 3V2.25"
+                                          ></path></svg
+                                      ></span>
+                                    </div></div
+                                ></span>
+                              </div>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </main>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="/js/sidebar.js"></script>
+</html>

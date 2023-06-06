@@ -1,0 +1,33 @@
+.section-title {
+  @apply bg-gradient-to-r from-primary-200 to-primary-400 bg-clip-text text-center text-[35px] font-bold text-transparent md:text-left md:text-white;
+}
+
+.owl-stage {
+  @apply flex items-center !important;
+
+  .owl-item.active.center {
+    .opacity-0 {
+      @apply max-h-20 opacity-100 !important;
+    }
+
+    .team-member {
+      @apply p-px shadow-xl !important;
+
+      .relative {
+        @apply pt-8 after:bg-black/10 !important;
+
+        .h-24 {
+          @apply h-32 w-32 border-[12px] outline-8 !important;
+        }
+
+        .max-h-0 {
+          @apply mt-[22px] max-h-2 bg-white/10 !important;
+        }
+
+        .text-xl\/none {
+          @apply mt-2.5 !important;
+        }
+      }
+    }
+  }
+}

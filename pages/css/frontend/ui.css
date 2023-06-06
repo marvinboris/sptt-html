@@ -1,0 +1,104 @@
+html {
+  @apply scroll-smooth;
+}
+
+.scrollbar-app {
+  @apply scrollbar-thin scrollbar-track-transparent scrollbar-thumb-primary-600/50 scrollbar-track-rounded-full scrollbar-thumb-rounded-full;
+}
+
+body {
+  @apply scrollbar-app bg-secondary-900 leading-tight text-white/80;
+}
+
+header,
+footer,
+main,
+section {
+  @apply transition-all duration-200;
+}
+
+.main-wrapper {
+  @apply flex flex-grow flex-col;
+}
+
+main.page-main > header {
+  @apply relative z-10 flex h-[314px] flex-col justify-end pb-6 after:absolute after:inset-0 after:-z-10 after:bg-gradient-to-t after:from-primary-600 after:to-transparent md:h-[330px];
+
+  .bg-img {
+    @apply absolute inset-0 z-0 after:absolute after:inset-0 after:bg-gradient-to-t after:from-primary-600 after:to-transparent;
+  }
+}
+
+option {
+  @apply bg-white dark:bg-secondary-800;
+}
+
+.section {
+  @apply py-20 sm:py-32;
+}
+
+main.page-main section {
+  @apply py-12 sm:py-20 !important;
+}
+
+.container {
+  @apply mx-auto max-w-7xl px-8;
+
+  .section-header {
+    @apply mx-auto md:text-center;
+
+    .section-header-title {
+      @apply text-3xl font-extrabold tracking-tight text-secondary-900 transition-all duration-200 dark:text-secondary-50 sm:text-4xl;
+    }
+
+    .section-header-subtitle {
+      @apply mx-auto mt-4 max-w-3xl;
+    }
+  }
+
+  .section-body {
+    @apply mx-auto mt-16;
+  }
+
+  .section-subtitle {
+    @apply mb-4 whitespace-pre-wrap text-2xl font-bold tracking-tight text-secondary-900 dark:text-secondary-50;
+  }
+}
+
+.image-cover {
+  @apply h-full w-full object-cover;
+}
+
+.btn {
+  @apply inline-flex h-[60px] items-center justify-center rounded-full px-6 text-sm font-medium transition-all duration-200 focus:outline-none focus-visible:outline-2 focus-visible:outline-offset-2;
+
+  &.btn-auth {
+    @apply rounded-xl;
+  }
+}
+
+.btn-primary {
+  @apply bg-gradient-to-r from-[#8250ED] to-[#452ECE] text-white focus-visible:outline-primary-600 hover:bg-primary-500 hover:text-secondary-100 active:bg-primary-800 active:text-primary-100;
+}
+
+.form-group {
+  @apply mb-4;
+
+  label {
+    @apply mb-2 block font-medium;
+  }
+
+  input {
+    @apply block w-full appearance-none rounded-md border border-secondary-200 bg-secondary-50 px-3 py-2 text-secondary-900 placeholder-secondary-400 focus:border-primary-600 focus:bg-white focus:outline-none focus:ring-primary-600 sm:text-sm;
+  }
+}
+
+.border-gradient {
+  border-image-source: linear-gradient(
+    to right,
+    var(--color-primary-400),
+    var(--color-blue)
+  );
+  border-image-slice: 1;
+  border-image-repeat: round;
+}
